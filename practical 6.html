@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Online Registration Form</title>
+        <style>
+            body{
+                font-family: Arial,sans-serif;
+                background-color:#ebeef3;
+                margin:0;
+                padding:0;
+            }
+            header,footer{
+                background-color:#1e2d50;
+                color:white;
+                text-align:center;
+                padding:15px;
+            }
+            nav{
+                background:#1a3649;
+                padding:10px;
+                text-align:center;
+            }
+            nav a{
+                color:white;
+                margin:10px;
+                text-decoration:none;
+
+            }
+            section{
+                padding:20px;
+            }
+            article{
+                background:white;
+                padding:20px;
+                border-radius:10px;
+                width:60%
+                margin:auto;
+            }
+            input,select,textarea{
+                 width:100%
+                  padding:8px;
+                margin:8px 0;
+            }
+            input[type="submit"]{
+                background:#27ae60;
+                color:white;
+                border:none;
+                cursor:pointer;
+            }
+             input[type="reset"]{
+                background:#e74c3c;
+                color:white;
+                border:none;
+                cursor:pointer;
+            }
+            </style>
+            </head>
+            <body>
+                <header>
+                    <h1>Tech Fest 2026</h1>
+                    <p> Online Event Registration</p>
+                </header>
+                <nav>
+                    <a href="#">Home</a>
+                        <a href="#">Events</a>
+                            <a href="#">Contact</a>
+                </nav>
+                <section>
+                    <article>
+                        <h2>Registration Form</h2>
+                        <form>
+                            <label> FULLNAME: </label>
+<input type="text" name="FULLNAME" placeholder="Enter fullname" required>
+<br><br>
+
+<label>Student ID</label>
+<input type="text" name="studentid" placeholder="ID1234" pattern="[A-Za-z0-9]{4,10}" required>
+<br><br>
+
+<label>Email</label>
+<input type="email" name="email" placeholder="example@mail.com" required>
+<br><br>
+
+<label>Mobile Number</label>
+<input type="tel" name="mobile" placeholder="10 digit number" pattern="[0-9]{10}" required>
+<br><br>
+<label>Gender</label>
+<input type="radio" name="gender" value="Male" required> Male
+<input type="radio" name="gender" value="Female"> Female
+<input type="radio" name="gender" value="Other"> Other
+<br><br>
+
+<label>Country</label>
+<select name="country" required>
+<option value="">Select Country</option>
+<option>India</option>
+<option>USA</option>
+<option>UK</option>
+<option>Canada</option>
+</select>
+<br><br>
+
+<label>Birthdate</label>
+<input type="date" name="birthdate" required>
+<br><br>
+
+<label>Select Color</label>
+<input type="color" name="color">
+<br><br>
+
+<label>Age</label>
+<input type="number" name="age" min="18" max="60" placeholder="18-60" required>
+<br><br>
+
+<label>Semester (Range)</label>
+<input type="range" name="sem" min="1" max="8">
+<br><br>
+
+<label>Address</label>
+<textarea name="address" rows="3" placeholder="Enter address" required></textarea>
+<br><br>
+
+<label>Pincode</label>
+<input type="text" name="pincode" placeholder="6 digit pincode" pattern="[0-9]{6}" required>
+<br><br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset"> 
+                        </form>
+                    </article>
+                </section>
+<section>
+    <h2 style="text-align:center;">Event Promo Video</h2>
+    <center>
+        <video width="400" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+    </center>
+</section>
+<section>
+    <h2 style="text-align:center;">Event Promo Audio</h2>
+    <center>
+        <audio width="400" controls>
+            <source src="video.mp3" type="audio/mp4">
+            Your browser does not support audio.
+        </audio>
+    </center>
+</section>
+<footer>
+   <p>&copy; 2026 Tech Fest | All Rights Reserved </p>
+</footer>
+            </body>
+            </html>
